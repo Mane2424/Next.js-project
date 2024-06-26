@@ -1,0 +1,271 @@
+.ledger-page {
+	padding: 0 40px 5px 40px;
+	display: block;
+	begin-overlay {
+		top: 0;
+	}
+	button {
+		background: none;
+		border: none;
+		outline: none;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	.pending_commissions_table {
+		.dx-datagrid {
+			&:last-child .dx-datagrid-headers .dx-column-lines td {
+				background-color: #f2f2f2 !important;
+			}
+		}
+		.datagrid-table-dark-pendingcommission {
+			.dx-datagrid {
+				&:last-child .dx-datagrid-headers .dx-column-lines td {
+					background-color: #151f34 !important;
+				}
+				.dx-datagrid-nodata {
+					color: white !important;
+				}
+				.dx-datagrid-rowsview
+					.dx-datagrid-content:not(.dx-datagrid-content-fixed) {
+					background: #272e40 !important;
+				}
+			}
+			.dx-datagrid-nodata {
+				&::after {
+					color: white !important;
+				}
+			}
+			.dx-toolbar {
+				.dx-datagrid-group-panel {
+					background-color: #151f34 !important;
+				}
+			}
+			.dx-group-panel-message {
+				color: white !important;
+			}
+			.dx-datagrid-rowsview .dx-row {
+				td {
+					background-color: #272e40 !important;
+					color: white !important;
+				}
+				&:hover {
+					td {
+						background-color: #272e40 !important;
+						color: white !important;
+					}
+				}
+				td {
+					&:focus {
+						background-color: #272e40 !important;
+						color: white !important;
+					}
+				}
+			}
+			.dx-datagrid-rowsview .dx-row.dx-selection {
+				&:hover {
+					td {
+						background-color: white !important;
+						color: white !important;
+					}
+				}
+				td {
+					&:focus {
+						background-color: #effafe !important;
+						color: white !important;
+					}
+				}
+			}
+			.dx-scrollable-content {
+				background-color: #151f34 !important;
+				color: white !important;
+			}
+			.dx-header-row {
+				background-color: #151f34 !important;
+				td > div:last-child {
+					color: white !important;
+				}
+			}
+		}
+	}
+	.approved_commissions_table {
+		.dx-datagrid {
+			.dx-datagrid-total-footer tr {
+				background-color: #f2f2f2 !important;
+				padding: 0;
+			}
+			.dx-datagrid-total-footer > .dx-datagrid-content {
+				padding: 0 !important;
+			}
+		}
+		.datagrid-table-dark-approvedcommission {
+			.dx-datagrid {
+				&:last-child .dx-datagrid-headers .dx-column-lines td {
+					background-color: #151f34 !important;
+				}
+				.dx-datagrid-total-footer tr {
+					background-color: #151f34 !important;
+				}
+				.dx-datagrid-total-footer > .dx-datagrid-content {
+					padding: 0 !important;
+				}
+				.dx-datagrid-nodata {
+					color: white !important;
+				}
+				.dx-datagrid-rowsview
+					.dx-datagrid-content:not(.dx-datagrid-content-fixed) {
+					background: #272e40 !important;
+				}
+			}
+			.dx-datagrid-nodata {
+				&::after {
+					color: white !important;
+				}
+			}
+			.dx-toolbar {
+				.dx-datagrid-group-panel {
+					background-color: #151f34 !important;
+				}
+			}
+			.dx-group-panel-message {
+				color: white !important;
+			}
+			.dx-datagrid-rowsview .dx-row {
+				td {
+					background-color: #272e40 !important;
+					color: white !important;
+				}
+				&:hover {
+					td {
+						background-color: #272e40 !important;
+						color: white !important;
+					}
+				}
+				td {
+					&:focus {
+						background-color: #272e40 !important;
+						color: white !important;
+					}
+				}
+			}
+			.dx-datagrid-rowsview .dx-row.dx-selection {
+				&:hover {
+					td {
+						background-color: white !important;
+						color: white !important;
+					}
+				}
+				td {
+					&:focus {
+						background-color: #effafe !important;
+						color: white !important;
+					}
+				}
+			}
+			.dx-scrollable-content {
+				background-color: #151f34 !important;
+				color: white !important;
+			}
+			.dx-header-row {
+				background-color: #151f34 !important;
+				td > div:last-child {
+					color: white !important;
+				}
+			}
+		}
+	}
+	.dx-datagrid {
+		&:last-child .dx-datagrid-headers .dx-column-lines td {
+			background-color: #e2efda;
+		}
+
+		.dx-datagrid-rowsview tr.dx-column-lines {
+			td.colorful {
+				color: #d16a39;
+			}
+
+			&.starting-balance,
+			&.total-earnings,
+			&.total-withdrawals {
+				td {
+					font-weight: 600;
+					color: initial;
+					background-color: #f2f2f2;
+				}
+			}
+			&.total-withdrawals td {
+				border-bottom-color: #f2f2f2;
+			}
+
+			&.total-earnings td {
+				border-bottom: none;
+			}
+
+			&.approved td.colorful {
+				color: #38bd6c;
+			}
+		}
+
+		.dx-datagrid-summary-item {
+			height: 26px;
+			line-height: 15px;
+			font-size: 14px;
+			font-weight: 600;
+			color: initial;
+		}
+		.text-template,
+		.date-template {
+			.save-to-clipboard {
+				position: absolute;
+				display: none;
+			}
+		}
+		td {
+			.save-to-clipboard {
+				right: 5px !important;
+				top: 50% !important;
+				transform: translateY(-50%);
+			}
+
+			&.colorful,
+			&.clipboard-holder,
+			&.suggested-copy {
+				position: relative;
+				padding-right: 25px;
+
+				.link-value {
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+
+				&:hover {
+					.text-template,
+					.date-template {
+						.save-to-clipboard {
+							display: block;
+						}
+					}
+					.suggested-tooltip {
+						display: block;
+					}
+				}
+			}
+		}
+		.dx-datagrid-total-footer td {
+			padding: 0 !important;
+			.dx-datagrid-text-content {
+				padding: 7px !important;
+				&:first-child {
+					border-bottom: 1px solid #868686;
+				}
+			}
+		}
+
+		td.withdrawalAmount {
+			color: #38bd6c;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}

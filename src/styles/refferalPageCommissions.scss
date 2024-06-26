@@ -1,0 +1,320 @@
+header {
+	width: 100%;
+	position: relative;
+	h1 {
+		font-family: Poppins;
+		font-size: 13px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.8;
+		letter-spacing: -0.27px;
+		text-align: left;
+		color: #010043;
+		position: absolute;
+		top: 15px;
+		z-index: 1;
+		left: 35px;
+	}
+	button {
+		height: 24px;
+		padding: 0px 12px 0px 20px;
+		background-color: #e7ebef;
+		position: absolute;
+		border-radius: 4px;
+		cursor: pointer;
+		border: none;
+		z-index: 1;
+		right: 28px;
+		top: 15px;
+		font-size: 11px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: -0.16px;
+		text-align: right;
+		color: #010043;
+		&::before {
+			top: 7px;
+			left: 9px;
+			width: 6px;
+			height: 10px;
+			outline: none;
+			position: absolute;
+			background-image: url("../../public/images/icon/download.svg");
+			background-size: 6px auto;
+			background-repeat: no-repeat;
+			display: inline-block;
+			content: "";
+		}
+	}
+}
+.grid-data-table-commission {
+	.datagrid-table-dark-commission {
+		.dx-datagrid-nodata {
+			&::after {
+				color: white !important;
+			}
+		}
+		.dx-toolbar {
+			.dx-datagrid-group-panel {
+				background-color: #151f34 !important;
+			}
+		}
+		.dx-group-panel-message {
+			color: white !important;
+		}
+		.dx-datagrid-rowsview .dx-row {
+			&:hover {
+				td {
+					background-color: #272e40 !important;
+					color: white !important;
+				}
+			}
+			td {
+				&:focus {
+					background-color: #272e40 !important;
+					color: white !important;
+				}
+			}
+		}
+		.dx-datagrid-rowsview .dx-row.dx-selection {
+			&:hover {
+				td {
+					background-color: white !important;
+					color: white !important;
+				}
+			}
+			td {
+				&:focus {
+					background-color: #effafe !important;
+					color: white !important;
+				}
+			}
+		}
+		.dx-scrollable-content {
+			background-color: #151f34 !important;
+			color: white !important;
+		}
+		.dx-header-row {
+			background-color: #151f34 !important;
+			td > div:last-child {
+				color: white !important;
+			}
+		}
+	}
+	.dx-datagrid {
+		width: calc(100vw - 400px);
+		height: calc(100vh - 335px);
+		margin: 0 25px;
+		.dx-datagrid-rowsview .dx-row {
+			border-top: 1px solid #ddd !important;
+			border-bottom: 1px solid #ddd !important;
+		}
+		.dx-datagrid-nodata {
+			font-size: 12px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.5;
+			letter-spacing: -0.18px;
+			color: #6a6a6a;
+			&::after {
+				content: "Click Here to Get and Promote Your Links";
+				font-size: 14px;
+				font-weight: 500;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 2.8;
+				letter-spacing: -0.21px;
+				text-align: center;
+				display: block;
+				color: #0a0850;
+				cursor: pointer;
+			}
+		}
+
+		.dx-toolbar {
+			height: 40px;
+			width: 100%;
+			.dx-datagrid-group-panel {
+				height: 28px;
+				width: 100%;
+				border-radius: 5px;
+				width: 100% !important;
+				text-align: center;
+				background-color: #f4f6f8;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.dx-group-panel-message {
+					visibility: hidden;
+				}
+				&:hover .dx-group-panel-message {
+					visibility: visible;
+				}
+			}
+		}
+		.dx-group-panel-message {
+			width: 310px;
+			text-align: right;
+			display: inline-block;
+			padding: 4px 0;
+			background: transparent;
+			font-size: 11px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.8;
+			letter-spacing: normal;
+			color: #6a6a6a;
+			border: none;
+			&::before {
+				content: "";
+				display: inline-block;
+				background: url(../../public/images/icon/move-2.svg) no-repeat;
+				background-size: 11px 11px;
+				position: relative;
+				width: 11px;
+				height: 11px;
+				top: 2px;
+				right: 5px;
+			}
+		}
+		.dx-toolbar .dx-toolbar-before {
+			width: 100%;
+		}
+		.dx-item-content .dx-toolbar-item-content {
+			width: 100%;
+		}
+		.dx-datagrid-headers {
+			border: 0px;
+			.dx-datagrid-content {
+				border-color: #eae7e1;
+			}
+			.dx-datagrid-text-content {
+				text-transform: capitalize;
+				font-size: 11px;
+				font-weight: 500;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.69;
+				letter-spacing: -0.16px;
+				text-align: left;
+				color: #0a0850;
+			}
+			.dx-column-indicators {
+				// .dx-sort-down:before, .dx-sort-up:before {
+				//     background: url('../../../../assets/common/icons/sort-up-blue.svg') no-repeat center;
+				// }
+			}
+		}
+
+		.dx-datagrid-rowsview {
+			border: 0px;
+		}
+
+		.dx-datagrid-pager {
+			border: 0px;
+
+			.dx-page-size {
+				width: 30px;
+				height: 30px;
+				border: 0px;
+				padding: 7px;
+				font-size: 11px;
+				font-weight: normal;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: normal;
+				letter-spacing: -0.24px;
+				text-align: center;
+				color: #908d87;
+
+				&.dx-selection {
+					border-radius: 50%;
+					background-color: #02008a;
+					color: #fff !important;
+				}
+			}
+
+			.dx-page {
+				width: 30px;
+				height: 30px;
+				border: 0px;
+				padding: 7px;
+				font-size: 11px;
+				font-weight: normal;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: normal;
+				letter-spacing: -0.24px;
+				text-align: center;
+				color: #908d87;
+				&.dx-selection {
+					border-radius: 50%;
+					background-color: #02008a;
+					color: #fff !important;
+				}
+			}
+		}
+		.text-template,
+		.status-template,
+		.amount-template,
+		.date-template,
+		.tier-template {
+			.save-to-clipboard {
+				position: absolute;
+				display: none;
+			}
+		}
+		td {
+			.save-to-clipboard {
+				right: 5px !important;
+				top: 50% !important;
+				transform: translateY(-50%);
+			}
+
+			&.orderDate,
+			&.orderNumber,
+			&.customerName,
+			&.productName,
+			&.productAmount,
+			&.tier,
+			&.commissionAmount,
+			&.status,
+			&.suggested-copy {
+				position: relative;
+				padding-right: 25px;
+
+				.link-value {
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+
+				&:hover {
+					.text-template,
+					.status-template,
+					.amount-template,
+					.date-template,
+					.tier-template {
+						.save-to-clipboard {
+							display: block;
+						}
+					}
+					.suggested-tooltip {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 1024px) {
+	.grid-data-table-commission {
+		.dx-datagrid {
+			width: calc(100vw - 50px);
+		}
+	}
+}

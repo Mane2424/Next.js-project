@@ -1,0 +1,253 @@
+.referrall-link-wrapper {
+	display: flex;
+	justify-content: space-between;
+	background-color: #f7f9fa;
+	margin: 30px;
+	min-height: 200px;
+
+	border-radius: 10px;
+	.left {
+		flex-basis: 20%;
+		font-size: 13px;
+		text-align: left;
+		margin: 30px 0 0 20px;
+		color: #0a0850;
+	}
+	.center {
+		margin: 20px;
+		padding: 10px;
+		flex-basis: 60%;
+		max-width: 600px;
+		min-width: 510px;
+		background-color: #fff;
+		color: #0a0850;
+		h1 {
+			white-space: nowrap;
+			font-size: 17px;
+			font-weight: 600;
+			span {
+				color: #1b6634;
+				text-decoration: underline;
+			}
+		}
+		h3 {
+			font-size: 11px;
+		}
+
+		p {
+			font-size: 12px;
+			font-weight: 600;
+			display: inline-block;
+		}
+		.social {
+			height: 24px;
+			display: flex;
+			align-items: center;
+		}
+		button {
+			width: 85px;
+			height: 43px;
+			background: #1b6634;
+			cursor: pointer;
+			color: #fff;
+			border: none;
+			position: relative;
+			border-radius: 0 10px 10px 0px;
+		}
+		.link-text-area {
+			margin-top: 20px;
+			display: flex;
+			.dx-select-box,
+			.dx-text-box.url {
+				display: inline-block;
+			}
+
+			.dx-text-box.url {
+				margin-left: 120px;
+			}
+
+			.dx-select-box {
+				position: absolute;
+			}
+
+			.dx-texteditor-container .dx-dropdowneditor-icon {
+				background: transparent !important;
+			}
+
+			.dx-editor-outlined {
+				border: none !important;
+			}
+
+			.dx-select-box
+				.dx-dropdowneditor-input-wrapper
+				.dx-selectbox-container
+				.dx-selectbox-container {
+				width: 120px !important;
+			}
+
+			.dx-texteditor-input-container .dx-placeholder::before {
+				padding: 7px 20px 8px;
+			}
+			.dx-texteditor-input-container {
+				background-color: transparent !important;
+			}
+			.dx-texteditor-container:nth-child(2) {
+				border-radius: 10px 0 0 10px !important;
+				background: #dfdfdf !important;
+				color: #212529;
+			}
+			.dx-texteditor-input-container > div {
+				color: #212529 !important;
+				font-size: 14px;
+				font-weight: 600;
+			}
+			.dx-texteditor-input-container:nth-child(1) {
+				border: 1px solid #dfdfdf !important;
+			}
+
+			.dx-text-box.url input {
+				border: 1px solid #dfdfdf;
+			}
+		}
+		.icons {
+			display: flex;
+			padding-left: 10px;
+			margin-bottom: 0;
+			align-items: center;
+			gap: 8px;
+			li {
+				list-style: none;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.right {
+		color: #0a0850;
+		flex-basis: 20%;
+		margin: 0 20px 0 0;
+		h3 {
+			color: #f26725;
+			font-size: 18px;
+			font-weight: 600;
+		}
+		p {
+			font-size: 13px;
+		}
+		button {
+			background-color: #fff;
+			border: none;
+			padding: 5px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 12px;
+			font-weight: 500;
+			color: #0a0850;
+		}
+	}
+}
+.statistic {
+	display: flex;
+	border-radius: 10px;
+	justify-content: space-around;
+	background-color: #f7f9fa;
+	margin: 0 30px;
+	padding: 20px 0;
+
+	div {
+		width: 100%;
+		text-align: center;
+		border-left: 1px solid #dedede;
+
+		&:first-child {
+			border-left: none;
+		}
+
+		p {
+			color: #119922;
+			font-size: 22px;
+			font-weight: 600;
+		}
+		span {
+			color: #0a0850;
+			font-weight: 500;
+		}
+	}
+}
+.payment-method {
+	width: 250px;
+	height: 100px;
+	border-radius: 5px;
+	background-color: #f4f6f8;
+	text-align: center;
+	margin: 20px auto 0 0;
+	padding: 5px 0;
+	.pay-pal {
+		span {
+			font-size: 12px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: -0.27px;
+			text-align: left;
+			color: #0a0850;
+			img {
+				margin-left: 5px;
+			}
+		}
+		.email {
+			font-size: 11px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: -0.26px;
+			text-align: center;
+			color: #0a0850;
+		}
+	}
+	.bank-transfer {
+		span {
+			font-size: 12px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: -0.27px;
+			text-align: left;
+			color: #0a0850;
+		}
+	}
+	.update-payment {
+		a {
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			gap: 5px;
+			font-size: 10px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: -0.24px;
+			text-align: center;
+			color: #02008a;
+		}
+	}
+}
+.stripe-button {
+	padding: 8px;
+	background-color: #635fcc;
+	border-color: #635fcc;
+	color: #fff;
+	display: flex;
+	gap: 8px;
+	margin-top: 10px;
+	width: 200px;
+	align-items: center;
+	border-radius: 4px;
+	&:focus {
+		box-shadow: 0 0 0 0.2rem rgba(99, 95, 204, 0.5);
+	}
+}

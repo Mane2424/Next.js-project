@@ -1,0 +1,16 @@
+.drawer_menu {
+	position: absolute;
+	transition: 0.5s ease-in-out;
+}
+
+.drawer_menu_opened {
+	right: 0;
+}
+
+.drawer_menu_closed {
+	right: -300px;
+}
+
+.animation {
+	transition: 0.5s ease-in-out;
+}

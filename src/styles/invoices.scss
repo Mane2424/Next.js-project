@@ -1,0 +1,194 @@
+.status-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 26px !important;
+}
+div.status {
+	width: 110px;
+	height: 26px;
+	background: #f3f7fa;
+	padding: 2px 15px;
+	border-radius: 15px;
+	font-size: 11px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 2.18;
+	letter-spacing: 0.88px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #40596b;
+	&:before {
+		content: "\A";
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		display: inline-block;
+		margin-right: 5px;
+		background: #dedede;
+	}
+	&.final:before {
+		background: #1fb430;
+	}
+	&.pending:before {
+		background: #f1a72d;
+	}
+	&.sent:before {
+		background: #fff939;
+	}
+	&.draft:before {
+		background: rgba(64, 89, 107, 0.28);
+	}
+	&.partiallypaid {
+		width: 145px;
+		&:before {
+			background: #248392;
+		}
+	}
+	&.paid:before {
+		background: #3acddc;
+	}
+}
+.invoice-id {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.3px;
+	color: rgb(0, 0, 0);
+}
+.table_body_invoices {
+	height: calc(100vh - 175px);
+	width: 100%;
+}
+.fstx * {
+	width: 100% !important;
+	height: 100% !important;
+}
+.border-style {
+	border: 2px solid #777;
+}
+.dx-datagrid-header-panel .dx-toolbar {
+	margin-top: 10px;
+}
+.img-circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.table_container td {
+	vertical-align: middle !important;
+}
+.table_body {
+	height: calc(100vh - 206px);
+	width: calc(100% - 400px);
+	transition: 1s;
+}
+.table_body_filter {
+	height: calc(100vh - 206px);
+	width: 100%;
+	transition: 1s;
+}
+.table_compact_view td {
+	vertical-align: middle !important;
+	height: 35px !important;
+	.img-circle {
+		width: 20px !important;
+		height: 20px !important;
+	}
+}
+.image_size {
+	padding-left: 15px !important;
+}
+
+.dx-datagrid-rowsview .dx-row {
+	&:hover {
+		td {
+			background-color: #e6e6e6 !important;
+		}
+	}
+	td {
+		&:focus {
+			background-color: #e6e6e6 !important;
+		}
+	}
+}
+
+.dx-pager {
+	padding: 10px 20px !important;
+}
+
+.dx-command-select {
+	width: 50px !important;
+	min-width: 50px !important;
+}
+.PhoneInputInput {
+	background-color: transparent;
+}
+.PhoneInputInput:focus {
+	outline: none;
+}
+.datagridTableDark {
+	.dx-toolbar {
+		background-color: transparent !important;
+	}
+	td {
+		background-color: #272e40;
+	}
+	.dx-datagrid {
+		color: white !important;
+	}
+	.dx-datagrid-rowsview .dx-row {
+		&:hover {
+			td {
+				background-color: #38435a !important;
+				color: white !important;
+				cursor: pointer !important;
+			}
+		}
+		td {
+			&:focus {
+				background-color: #272e40 !important;
+				color: white !important;
+			}
+		}
+	}
+	.dx-datagrid-rowsview .dx-row.dx-selection {
+		&:hover {
+			td {
+				background-color: #38435a !important;
+			}
+		}
+		td {
+			&:focus {
+				background-color: #38435a !important;
+			}
+		}
+		td {
+				background-color: #38435a !important;
+				color: white !important;
+		}
+	}
+	.dx-scrollable-wrapper {
+		background-color: #272e40;
+	}
+	.dx-datagrid-nodata {
+		color: white !important;
+	}
+	.dx-datagrid-text-content {
+		color: white !important;
+	}
+	.dx-page {
+		color: white !important;
+	}
+	.dx-page-size {
+		color: white !important;
+	}
+	.dx-selection {
+		color: black !important;
+	}
+}
